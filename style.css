@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Jakarta;
+    src: url(PlusJakarta.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jakarta;
+}
+
+.container{
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.notify-header{
+    display: flex;
+    justify-content: space-between ;
+}
+.notify{
+    display: flex;
+    gap: 5px;
+}
+
+.notify .notification h3{
+    color: hsl(224, 21%, 14%);
+}
+
+.notify .notification-amount p{
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 7px;
+    /* font-size: 1.5rem; */
+    padding: 2px 10px;
+}
+
+.notify-header .mark button{
+    color: hsl(219, 12%, 42%);
+}
+
+.mark {
+    justify-self: end;
+}
+
+#mark:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.notify-box{
+    display: flex;
+    gap: 10px;
+    background-color: hsl(210, 60%, 98%);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.notify-box4, .notify-box5, .notify-box6, .notify-box7{
+    background-color: inherit;
+    position: relative;
+} 
+
+.notify-box img{
+    width: 35px;
+    height: 35px;
+}
+
+.notify-box5 .image2{
+    position: absolute;
+    right: 15px;
+}
+
+.notify-box p{
+    color: hsl(219, 12%, 42%);
+}
+
+.notify-box span.name{
+    color: hsl(224, 21%, 14%);
+    font-weight: bold;
+}
+
+.notify-box span.query{
+    font-weight: bold;
+    color: hsl(219, 12%, 42%);
+}
+
+.notify-box span.time{
+    display: block;
+    font-size: small;
+    color: hsl(219, 14%, 63%);
+}
+
+span.name:hover, span.query:hover, span.query2:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.fa-circle{
+    color: hsl(1, 90%, 64%);
+    font-size: 0.4rem;
+    margin-left: 5px;
+}
+
+.notify-box span.query2{
+    color: hsl(219, 85%, 26%);;
+    font-weight: bold;
+}
+
+.notify-box .text-box{
+    /* border: 1px solid hsl(219, 14%, 63%); */
+    box-shadow: 0px 0px 15px -10px hsl(219, 14%, 63%);
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+
+.text-box:hover{
+    background-color: hsl(205, 33%, 90%);
+    border: none;
+    box-shadow: none;
+}
+
+.notify-box .text-box p{
+    font-size: small;
+    font-weight: bold;
+}
+
+@media(min-width: 800px){
+    section{
+        padding: 5% 20%;
+    }
+    .container{
+        border-radius: 10px;
+        box-shadow: 0px 0px 14px -3px rgba(148,148,148,1);
+    }
+
+    .notify-box{
+        gap: 20px;
+    }
+}
