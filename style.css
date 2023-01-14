@@ -26,10 +26,11 @@
 
 .notify .notification h3{
     color: hsl(224, 21%, 14%);
+    cursor: pointer;
 }
 
 .notification{
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .notify .notification-amount p{
